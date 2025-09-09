@@ -26,21 +26,21 @@ my-django-project/
 ├── manage.py
 ├── api/
 │   └── tests/
-│       ├── test_catalog_controller.py
+│       ├── test_product.py
 │       └── cassettes/
-│           └── test_catalog_controller/
-│               └── test_get_product_offerings.yaml
+│           └── test_product_controller/
+│               └── test_get_product.yaml
 ```
 
 ## Example Test Code
 
 ```python
-@vhs.use_cassette("/test_product/test_get_product.yaml")
+@vhs.use_cassette("/test_product/test_product_controller/test_get_product.yaml")
 def test_get_product(self):
 	# Test code here
 
 @pytest.mark.vcr()
-def test_create_product(self):
+def test_get_product(self):
 	# Test code here
 ```
 
@@ -77,7 +77,7 @@ You can set the root path for cassettes in the extension settings or via the com
 ## Support
 
 Need help? Have a feature request? Found a bug?
-- [Write a review](https://marketplace.visualstudio.com/items?itemName=dcaramello.python-debug-test&ssr=false#review-details)
+- [Write a review](https://marketplace.visualstudio.com/items?itemName=dcaramello.vcr-manager&ssr=false#review-details)
 
 
 ## Credits

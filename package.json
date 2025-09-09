@@ -2,8 +2,8 @@
   "name": "vcr-manager",
   "displayName": "vcr-manager",
   "description": "Manage VCR cassettes",
-  "version": "0.0.1",
-  "publisher": "Dimitri Caramello",
+  "version": "1.0.0",
+  "publisher": "dcaramello",
   "repository": {
     "type": "git",
     "url": "https://github.com/dcaramello/vcr-manager"
